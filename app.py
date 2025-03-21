@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 import google.generativeai as genai
-#from pdf2image import convert_from_bytes
 import os
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
