@@ -5,7 +5,6 @@ import os
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 model = genai.GenerativeModel("gemini-1.5-flash")
-#POPPLER_PATH = r" " # Set your poppler path (bin)
 
 def get_gemini_response(image, prompt):
     response = model.generate_content([image, prompt])
